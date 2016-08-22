@@ -1,4 +1,4 @@
-package com.qualcomm.ftcrobotcontroller.opmodes.mainCode;
+package com.qualcomm.ftcrobotcontroller.opmodes.mechatech;
 
 import com.qualcomm.robotcore.util.Range;
 

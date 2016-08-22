@@ -31,8 +31,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
 
 package com.qualcomm.ftcrobotcontroller.opmodes;
 
-import com.qualcomm.ftcrobotcontroller.opmodes.mainCode.Auto;
-import com.qualcomm.ftcrobotcontroller.opmodes.mainCode.First;
+import com.qualcomm.ftcrobotcontroller.opmodes.mechatech.Auto;
+import com.qualcomm.ftcrobotcontroller.opmodes.mechatech.First;
 import com.qualcomm.robotcore.eventloop.opmode.OpModeManager;
 import com.qualcomm.robotcore.eventloop.opmode.OpModeRegister;
 

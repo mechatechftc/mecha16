@@ -41,7 +41,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     android:id="@+id/entire_screen"
     android:orientation="vertical">
 
-  <!-- black bar on top -->
+  <!-- light cyan bar on top -->
   <RelativeLayout
     android:id="@+id/top_bar"
     android:layout_width="fill_parent"
@@ -67,18 +67,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:text="@string/ftc_robot_controller"/>
-
-    <TextView
-      android:id="@+id/textDeviceName"
-      android:layout_toRightOf="@id/robotIcon"
-      android:layout_toEndOf="@id/robotIcon"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:textColor="@color/white"
-      android:padding="8dp"
-      android:textSize="16sp"
-      android:textStyle="bold"/>
+        android:text="@string/ftc_robot_controller"
+        android:textSize="20sp"/>
 
     <ImageButton
       android:id="@+id/menu_buttons"
@@ -96,7 +86,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       android:layout_margin="10dp"/>
 
   </RelativeLayout>
-  <!-- end of black bar -->
+  <!-- end of light cyan bar -->
 
   <include layout="@layout/header"
            android:id="@+id/included_header"/>

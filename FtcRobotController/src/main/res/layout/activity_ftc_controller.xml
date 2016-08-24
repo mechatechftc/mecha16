@@ -46,44 +46,51 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     android:id="@+id/top_bar"
     android:layout_width="fill_parent"
     android:layout_height="128dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:background="@color/colorPrimaryLight">
-    <ImageView
-      android:id="@+id/robotIcon"
-      android:layout_width="40dp"
-      android:layout_height="72dp"
-      android:adjustViewBounds="true"
-      android:layout_margin="5dp"
-      android:layout_centerVertical="true"
-      android:background="@drawable/icon_robotcontroller"/>
+    android:background="@drawable/header">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="@color/white"
+          android:textStyle="bold"
+          android:text="@string/app_name"
+          android:textSize="20sp"/>
+
+      <ImageButton
+          android:id="@+id/menu_buttons"
+          android:contentDescription="@string/menu_button"
+          android:scaleType="fitXY"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:src="@drawable/icon_menu"
+          android:background="?android:attr/selectableItemBackground"
+          android:adjustViewBounds="true"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true"
+          android:layout_centerHorizontal="true"/>
+    </LinearLayout>
     <TextView
+        android:id="@+id/textDeviceName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/robotIcon"
-        android:layout_toEndOf="@+id/robotIcon"
-        android:layout_marginLeft="16dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/white"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
         android:textStyle="bold"
-        android:text="@string/ftc_robot_controller"
-        android:textSize="20sp"/>
-
-    <ImageButton
-      android:id="@+id/menu_buttons"
-      android:contentDescription="menu_buttons"
-      android:scaleType="fitXY"
-      android:layout_width="24dp"
-      android:layout_height="24dp"
-      android:src="@drawable/icon_menu"
-      android:background="@color/transparent_color"
-      android:adjustViewBounds="true"
-      android:layout_alignParentRight="true"
-      android:layout_alignParentEnd="true"
-      android:layout_centerInParent="true"
-      android:layout_centerHorizontal="true"
-      android:layout_margin="10dp"/>
+        android:text=""/>
 
   </RelativeLayout>
   <!-- end of light cyan bar -->
